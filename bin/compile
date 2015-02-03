@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+dirtomove=`cat .subdir`
+dirtemp="${dirtomove}-temp"
+cd $1
+mv $dirtomove $dirtemp
+mv $dirtemp/* .
+
