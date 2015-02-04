@@ -2,6 +2,8 @@
 
 set -e
 
+cd $1
+
 dirtomove=`cat .subdir`
 dirtemp="${dirtomove}-temp"
 cd $1
